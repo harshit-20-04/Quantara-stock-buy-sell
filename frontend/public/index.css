@@ -1,0 +1,43 @@
+*{
+    font-family: 'Roboto', sans-serif !important;
+    font-size:0.95rem;
+    color: rgba(36, 35, 35, 0.83);
+}
+
+.flex{
+    display:flex;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.active-border-bottom{
+    border-bottom:0.15rem solid rgb(104, 104, 236);
+    color:black;
+}
+
+a{
+    text-decoration: none;
+}
+
+#logo{
+    width:14rem;
+    padding-right:5.5rem;
+}
+
+.nav-link{
+    margin-left: 20px;
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}

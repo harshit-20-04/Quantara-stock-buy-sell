@@ -1,0 +1,60 @@
+<!-- quantara_fund_house.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="900" height="220" role="img" aria-labelledby="title desc">
+  <title id="title">Quantara Fund House logo</title>
+  <desc id="desc">Dark blue circular icon with a white shooting star and ascending bars, with the text "Quantara Fund House" to the right.</desc>
+
+  <!-- Brand color -->
+  <defs>
+    <style>
+      .brand { fill: #0B3350; }
+      .white-stroke { fill: none; stroke: #ffffff; stroke-width: 14; stroke-linecap: round; stroke-linejoin: round; }
+      .text-main { font-family: "Roboto", "Helvetica Neue", Arial, sans-serif; fill: #0B3350; }
+    </style>
+  </defs>
+
+  <!-- Left icon: dark-blue circle -->
+  <g transform="translate(40,10)">
+    <circle cx="100" cy="100" r="88" class="brand" />
+
+    <!-- Shooting star outline (white stroke) -->
+    <!-- Path draws a stylized star with a swooping tail that flows into the bars -->
+    <path class="white-stroke"
+          d="M64 82
+             L96 72
+             L112 44
+             L128 72
+             L160 82
+             L132 102
+             L140 140
+             L112 116
+             L84 140
+             L92 102
+             Z" />
+
+    <!-- Swoosh tail (white stroke) -->
+    <path class="white-stroke"
+          d="M70 145
+             C110 120, 150 102, 200 82" />
+
+    <!-- Bars (white stroke, rounded) -->
+    <rect x="160" y="122" width="12" height="12" rx="3" ry="3" class="white-stroke" transform="translate(-40,0)"/>
+    <rect x="196" y="96"  width="12" height="38" rx="4" ry="4" class="white-stroke" transform="translate(-40,0)"/>
+    <rect x="232" y="64"  width="12" height="70" rx="4" ry="4" class="white-stroke" transform="translate(-40,0)"/>
+
+    <!-- small square notch at left base (like original) -->
+    <rect x="116" y="132" width="12" height="12" rx="2" ry="2" class="white-stroke"/>
+  </g>
+
+  <!-- Right text: "Quantara Fund House" -->
+  <g transform="translate(260,0)">
+    <!-- 'Quantara' -->
+    <text class="text-main" x="0" y="88" font-size="64" font-weight="700" letter-spacing="0.5">
+      Quantara
+    </text>
+
+    <!-- 'Fund House' on next line -->
+    <text class="text-main" x="0" y="152" font-size="56" font-weight="600" letter-spacing="0.2">
+      Fund House
+    </text>
+  </g>
+</svg>
