@@ -3,9 +3,11 @@ const express = require("express");
 const mongoose = require("mongoose");
 const axios = require("axios").default;
 
+
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const authRoute = require("./routes/AuthRoute");
+const dashboardRoutes = require("./routes/DashboardRoutes");
 
 const app = express();
 const cookiePaser = require("cookie-parser");
@@ -19,25 +21,17 @@ const db_url = process.env.ATLAS_MONGO_URL;
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000","http://localhost:5173"],
     credentials: true,
   })
 );
-
-app.use(
-  cors({
-    origin: "http://localhost:5173",
-    credentials: true,
-  })
-);
-
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookiePaser());
 
 app.use("/", authRoute);
-
+app.use("/api/dashboard", dashboardRoutes);
 mongoose
   .connect(db_url)
   .then(() => console.log("Connected to MongoDB!"))

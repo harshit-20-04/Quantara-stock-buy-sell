@@ -37,12 +37,11 @@ const Login = () => {
         },
         { withCredentials: true }
       );
-      console.log(data);
       const { success, message } = data;
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          navigate("/");
+          window.location.href = "http://localhost:5173"
         }, 1000);
       } else {
         handleError(message);
