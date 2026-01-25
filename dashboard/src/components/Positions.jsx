@@ -8,7 +8,7 @@ const Positions = () => {
   const [allPositions, setAllPositions] = useState([]);
   
   useEffect(()=>{
-    axios.get("http://localhost:8080/allPositions/").then((res)=>{
+    axios.get("http://localhost:8080/api/dashboard/allPositions/").then((res)=>{
       setAllPositions(res.data);
     })
   }, [])
