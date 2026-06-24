@@ -122,7 +122,7 @@ Open http://localhost:5173 (or your configured port) to view the landing page.
 ---
 #### 👋 Full Stack Developer passionate about creating scalable and user-friendly web applications.  
 #### 💼 Skilled in MERN Stack, REST APIs, and modern front-end development.  
-#### 📫 Reach me at: [harshit2004@zohomail.in](mailto:harshit2004@zohomail.in)    
+#### 📫 Reach me at: [05harshit.sharma2004@gmail.com](mailto:05harshit.sharma2004@gmail.com)    
 #### 🔗 GitHub: [harshit-20-04](https://github.com/harshit-20-04)  
 #### 💼 LinkedIn: [Harshit Sharma](https://www.linkedin.com/in/harshit-sharma-ac8896)
 ---
